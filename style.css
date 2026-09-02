@@ -2,7 +2,7 @@ body {
     color: #566787;
     background: #fff;
     font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     padding: 5px;
 }
@@ -42,7 +42,7 @@ container-fluid {
 	background: #03a3e7;
 }
 .table-title .btn {		
-	font-size: 14px;
+	font-size: 16px;
 	border: none;
 }
 .table-title .btn i {
