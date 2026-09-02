@@ -1,0 +1,338 @@
+body {
+    color: #566787;
+    background: #fff;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+}
+
+container-fluid {
+	display: flex;
+	justify-content: center;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 16px;
+    max-width: 1400px;
+    overflow-x: auto;
+}
+
+.table-wrapper .btn {
+	float: right;
+	color: #333;
+    background-color: #fff;
+	border-radius: 3px;
+	border: none;
+	outline: none !important;
+	margin-left: 10px;
+}
+.table-wrapper .btn:hover {
+    color: #333;
+	background: #f2f2f2;
+}
+.table-wrapper .btn.btn-primary {
+	color: #fff;
+	background: #03A9F4;
+}
+.table-wrapper .btn.btn-primary:hover {
+	background: #03a3e7;
+}
+.table-title .btn {		
+	font-size: 14px;
+	border: none;
+}
+.table-title .btn i {
+	float: left;
+	font-size: 21px;
+	margin-right: 5px;
+}
+.table-title .btn span {
+	float: left;
+	margin-top: 2px;
+}
+.table-title {
+	color: #fff;
+	background:#fff;		
+	margin: 0 auto;
+	border-radius: 3px 3px 0 0;
+	width: 100px;
+}
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 24px;
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+}
+
+.show-entries {
+	visibility: hidden;
+}
+
+.show-entries select.form-control {        
+    width: 70px;
+	margin: 20px 5px;
+}
+
+.table-filter .filter-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table-search {
+	visibility: hidden;
+	height: 20px;
+}
+
+.table-filter input, .table-filter select {
+	height: 44px;
+	border-radius: 20px;
+	border-color: #e5e5e5;
+    box-shadow: none;
+	padding-left: 40px;
+}
+
+.table-filter input::placeholder {
+	padding-left: 0px;		
+}
+
+.table-filter {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.table-filter .btn {
+	height: 34px;
+}
+.table-filter label {
+	font-weight: normal;
+	margin-left: 10px;
+}
+.table-filter select, .table-filter input {
+	margin: 0 auto;
+}
+.table-filter input {
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+}
+.filter-group select.form-control {
+	width: 210px;
+	margin: 0 auto;
+	display: block;
+}
+.filter-icon {
+	float: right;
+	margin-top: 7px;
+}
+.filter-icon i {
+	font-size: 18px;
+	opacity: 0.7;
+}	
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+table.table th {
+    background: #F2F2F2;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table.table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #ececec;
+    font-size: 14px;
+    color: #566787;
+}
+
+/* Larguras proporcionais para as colunas do CIAP-2 */
+table.table tr th:nth-child(1),
+table.table tr td:nth-child(1) {
+    width: 15%;
+}
+
+table.table tr th:nth-child(2),
+table.table tr td:nth-child(2) {
+    width: 50%;
+}
+
+table.table tr th:nth-child(3),
+table.table tr td:nth-child(3) {
+    width: 35%;
+}
+
+table.table-striped tbody tr:nth-of-type(even) {
+    background-color: #FAFAF7;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+    background: #eaf6ff;
+    transition: 0.2s;
+}
+
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}	
+
+table.table td a {
+	font-weight: bold;
+	color: #566787;
+	display: inline-block;
+	text-decoration: none;
+}
+
+table.table td a:hover {
+	color: #2196F3;
+}
+
+/* Estilo para a etiqueta de Categoria */
+.badge-categoria {
+    background-color: #e2e8f0;
+    color: #334155;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.pagination {
+    float: right;
+    margin: 0 0 20px;
+	margin-right: 30px;
+	visibility: hidden;
+}
+
+.pagination li a {
+    border: none;
+    font-size: 13px;
+    min-width: 30px;
+    min-height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 2px !important;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.pagination li a:hover {
+    color: #666;
+}	
+
+.pagination li.active a {
+    background: #03A9F4;
+}
+
+.pagination li.active a:hover {        
+    background: #0397d6;
+}
+
+.pagination li.disabled i {
+    color: #ccc;
+}
+
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px;
+}
+
+.hint-text {
+    float: left;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.clearfix {
+    visibility: hidden;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+	   
+.input {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px 0 46px;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+	   
+.input::placeholder {
+	color: #9e9ea7;
+}
+
+.input:focus, .input:hover {
+	outline: none;
+	border-color: #03A9F4;
+	background-color: #fff;
+	box-shadow: 0 0 0 4px rgb(3 169 244 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    fill: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .table-wrapper {
+        padding: 10px;
+    }
+
+    table.table th,
+    table.table td {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+
+    .group {
+        max-width: 100%;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+}
